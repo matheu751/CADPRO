@@ -1,0 +1,27 @@
+{% extends 'index.html' %}
+
+{% block title %} Register {% endblock %}
+
+{% block content %}
+    <div class="register_user">
+        <div class="title">
+            <h2> Create Account </h2>
+        </div>
+        <div class="form">
+            <form method="POST">
+                <input id="username" name="username" placeholder="Username" required>
+
+                <input type="email" id="email" name="email" placeholder="Email">
+
+                <input type="password" name="password" placeholder="Password"> 
+
+                <input type="submit" value="REGISTER">
+
+                    {% for message in get_flashed_messages() %}
+                        <div class="flash"> {{ message }} </div>
+                    {% endfor %}
+            </form>
+        </div>
+    </div>
+
+{% endblock %}

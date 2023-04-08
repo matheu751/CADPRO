@@ -1,0 +1,167 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+}
+
+nav a:hover {
+    opacity: 0.7;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: system-ui, 
+    -apple-system, Helvetica, Arial, sans-serif;
+    background: #232326;
+    height: 8vh;
+}
+
+.logo {
+    margin-left: 32px;
+    font-size: 20px;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+}
+
+.nav-list {
+    list-style: none;
+    display: flex;
+    margin-right: 32px;
+}
+
+.nav-list li {
+    letter-spacing: 3px;
+    margin-left: 32px;
+}
+
+.home_intro {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    font-family: system-ui, 
+    -apple-system, Helvetica, Arial, sans-serif;
+}
+
+.home_intro a {
+    text-decoration: none;
+    letter-spacing: 1px;
+    font-family: system-ui, 
+    -apple-system, Helvetica, Arial, sans-serif;
+}
+
+.register_login a {
+    display: inline;
+    position: relative;
+    margin-left: 15px;
+    margin-right: 15px;
+    top: 23px;
+    padding: 5px 1.3em 5px 1.3em;
+    font-size: larger;
+    color: #fff;
+    background-color: #232326;
+    border: 2px solid #232326;
+    border-radius: 25px;
+}
+
+.register_login a:hover {
+    background-color: #fff;
+    color: #232326;
+    border: 2px solid #232326;
+}
+
+.welcome {
+    position: absolute;
+    bottom: 50vh;
+}
+
+.welcome p {
+    font-size: large;
+    font-family: system-ui, 
+    -apple-system, Helvetica, Arial, sans-serif;
+    max-width: 400px;
+}
+
+.register_user {
+    position: absolute;
+    top: 0; 
+    bottom: 0;
+    left: 0; 
+    right: 0;
+    margin: auto;
+    text-align: center;
+    width:25%;
+    height: 60vh;
+    justify-content: center;
+    border: 1.5px solid #232326;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, .212);
+}
+
+.register_user .title {
+    padding-top: 40px;
+    font-family: system-ui, 
+    -apple-system, Helvetica, Arial, sans-serif;
+}
+
+.form input {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 24px;
+    width: 13em;
+    font-size: large;
+    font-family: Andale Mono, monospace;
+    background-color: #E9F0F1;
+    padding: 8px;
+    border: 0.5px solid #E9F0F1;
+    border-radius: 10px;
+}
+
+.form input:hover {
+    border: 0.5px solid #232326;
+}
+
+.form input:focus {
+    outline: none;
+    border: 0.5px solid #232326;
+}
+
+.form input[type="submit"] {
+    width: 10em;
+    background-color: #232326;
+    color: #fff;
+    cursor: pointer;
+}
+
+.form input[type="submit"]:hover {
+    background-color: #fff;
+    color: #232326;
+    border: 0.5px solid #232326;
+    border-radius: 10px;
+}
+
+.login {
+    position: absolute;
+    top: 0; 
+    bottom: 0;
+    left: 0; 
+    right: 0;
+    margin: auto;
+    text-align: center;
+    width:23%;
+    height: 50vh;
+    justify-content: center;
+    border: 1.5px solid #232326;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, .212);
+}
+
+.login .title {
+    padding-top: 35px;
+    font-family: system-ui, 
+    -apple-system, Helvetica, Arial, sans-serif;
+}
