@@ -1,6 +1,8 @@
 * {
     margin: 0;
+    border: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 nav a {
@@ -13,6 +15,8 @@ nav a:hover {
 }
 
 nav {
+    width: 100%;
+    position: fixed;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -86,82 +90,83 @@ nav {
     -apple-system, Helvetica, Arial, sans-serif;
     max-width: 400px;
 }
-
-.register_user {
-    position: absolute;
-    top: 0; 
-    bottom: 0;
-    left: 0; 
-    right: 0;
-    margin: auto;
-    text-align: center;
-    width:25%;
-    height: 60vh;
+ 
+.wrapper {
+    min-height: 100vh;
+    min-width: 100vw;
+    display: flex;
     justify-content: center;
-    border: 1.5px solid #232326;
+    align-items: center;
+    font-family: system-ui, 
+    -apple-system, Helvetica, Arial, sans-serif;
+    background-image: url("/static/img/pinheiros.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.container {
+    max-width: 500px;
+    min-height: 50vh;
+    padding: 2.5rem 3.5rem 2.5rem;
+    background-color: #fff;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, .212);
 }
 
-.register_user .title {
-    padding-top: 40px;
-    font-family: system-ui, 
-    -apple-system, Helvetica, Arial, sans-serif;
+.container h2 {
+    margin-bottom: 2rem;
+    position: relative;
+    text-align: center;
 }
 
-.form input {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 24px;
-    width: 13em;
-    font-size: large;
-    font-family: Andale Mono, monospace;
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+} 
+
+.input_field {
+    position: relative;
+}
+
+.input_field input {
     background-color: #E9F0F1;
-    padding: 8px;
+    outline: none;
+    margin-bottom: 1rem;
+    padding: 0.5rem;
     border: 0.5px solid #E9F0F1;
     border-radius: 10px;
+    font-size: large;
+    font-family: Andale Mono, monospace;
 }
 
-.form input:hover {
+.input_field input:hover {
     border: 0.5px solid #232326;
 }
 
-.form input:focus {
-    outline: none;
+.input_field input:focus {
     border: 0.5px solid #232326;
 }
 
-.form input[type="submit"] {
-    width: 10em;
-    background-color: #232326;
-    color: #fff;
+.flash {
+    margin-bottom: 0.5rem;
+    font-size: 15px;
+}
+
+form input[type="submit"] {
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+    padding: 0.5rem 1rem 0.5rem ;
+    background-color: #224251;
     cursor: pointer;
-}
-
-.form input[type="submit"]:hover {
-    background-color: #fff;
-    color: #232326;
-    border: 0.5px solid #232326;
+    color: #fff;
+    border-radius: 4px;
+    width: 10em;
     border-radius: 10px;
 }
 
-.login {
-    position: absolute;
-    top: 0; 
-    bottom: 0;
-    left: 0; 
-    right: 0;
-    margin: auto;
-    text-align: center;
-    width:23%;
-    height: 50vh;
-    justify-content: center;
-    border: 1.5px solid #232326;
-    box-shadow: 5px 5px 10px rgba(0, 0, 0, .212);
-}
+form input[type="submit"]:hover {
+    border-color: #232326;
+    background-color: #fff;
+    color: #232326;
 
-.login .title {
-    padding-top: 35px;
-    font-family: system-ui, 
-    -apple-system, Helvetica, Arial, sans-serif;
 }

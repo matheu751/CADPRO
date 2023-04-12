@@ -3,25 +3,30 @@
 {% block title %} Register {% endblock %}
 
 {% block content %}
-    <div class="register_user">
-        <div class="title">
+    <div class="wrapper">
+        <div class="container">
             <h2> Create Account </h2>
-        </div>
-        <div class="form">
             <form method="POST">
-                <input id="username" name="username" placeholder="Username" required>
+                <div class="input_field">
+                    <input id="username" name="username" placeholder="Username" required>
+                </div>
+                <div class="input_field">
+                        <input type="email" id="email" name="email" placeholder="Email">
+                </div>
+                <div class="input_field">
+                    <input type="password" name="password" placeholder="Password">
+                </div>
 
-                <input type="email" id="email" name="email" placeholder="Email">
-
-                <input type="password" name="password" placeholder="Password"> 
-
-                <input type="submit" value="REGISTER">
-
-                    {% for message in get_flashed_messages() %}
-                        <div class="flash"> {{ message }} </div>
-                    {% endfor %}
+                {% for message in get_flashed_messages() %}
+                    <div class="flash"> {{ message }} </div>
+                {% endfor %}
+                
+                <div class="input_field">
+                    <input type="submit" value="REGISTER">
+                </div>
+                
             </form>
-        </div>
+        </div>   
     </div>
 
 {% endblock %}
